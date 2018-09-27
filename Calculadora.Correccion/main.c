@@ -21,8 +21,9 @@ int main ()
 
     do
     {
+        system("pause");
         system("cls");
-        printf(" Menu");
+        printf(" \nMenu");
         printf("\n 1-Ingresar primer operando (A=%f).",operando1);
         printf("\n 2-Ingresar segundo operando (B=%f).",operando2);
         printf("\n 3-Calcular todas las operaciones:");
@@ -39,18 +40,20 @@ int main ()
         switch(opcion)
         {
         case 1:
-
+            bandera1=1;
             printf(" Ingrese primer numero: ");
             scanf ("%f", &operando1);
-            bandera1=1;
+
             break;
         case 2:
-
+            bandera2=1;
             printf(" Ingrese segundo numero: ");
             scanf ("%f", &operando2);
-            bandera2=1;
+
+
             break;
         case 3:
+
             if (bandera1==1 && bandera2==1)
             {
                 suma=funcionSuma(operando1,operando2);
@@ -60,6 +63,7 @@ int main ()
                 factorial1=(int) funcionFactorial1 (operando1);
                 factorial2=(int) funcionFactorial2 (operando2);
                 printf("\n -Calculando-\n");
+
             }
             else
             {
@@ -71,8 +75,8 @@ int main ()
             if (bandera1==1 && bandera2==1)
             {
 
-            printf("\n El resultado de la suma es: %.2f",suma);
-            printf ("\n El resultado de la resta es:%.2f", resta);
+                printf("\n El resultado de la suma es: %.2f",suma);
+                printf ("\n El resultado de la resta es:%.2f", resta);
 
                 if (operando2 ==0)
                 {
@@ -82,7 +86,7 @@ int main ()
                 {
                     printf ("\n El resultado de la division es:%.2f", division);
                 }
-            printf ("\n El resultado de la multiplicacion es:%.2f", multiplicacion);
+                printf ("\n El resultado de la multiplicacion es:%.2f", multiplicacion);
 
                 if (operando1<0)
                 {
@@ -102,7 +106,7 @@ int main ()
                 }
             }//if
             else
-                {
+            {
                 printf("\n Por favor vuelva al menu e ingrese dos numeros");
             }
 

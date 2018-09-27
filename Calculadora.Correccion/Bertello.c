@@ -93,4 +93,3 @@ int funcionFactorial2 (int operando2)
 *\param se realiza la operacion factoreo
 *\param se muestra mensaje de que no se puede factorear por menos de 0
 */
-
